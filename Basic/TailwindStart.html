@@ -1,0 +1,62 @@
+
+<!-- Basically Tailwind Provide Styling in Html file only which means No need to Create extra css file to style your page -->
+
+<!-- Tailwind can be used to create websites fastly it provides more optons and Basically it will help to make pages responsive easily -->
+
+<!-- For Tailwind go to its Website  for Docs-->
+
+<!-- To add Tailwind in our page we will need to use this CDN script on head of the html file 
+ <script src="https://cdn.tailwindcss.com"></script>-->
+
+ <!-- Remeber that on production use this instead of CDN script 
+  install this packages using terminal 
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init     -->
+
+<!-- Using Tailwindcssintelegence extension can help you to get more sugar taste of tailwind css -->
+
+<!-- Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <h1 class="text-3xl bg-blue-400 hover:bg-yellow-600 font-bold underline">
+
+        Hello World
+    </h1>
+    <!-- So this is how Tailwind Works -->
+
+    <nav class="px-3 py-5 bg-red-400">
+        <!-- mx refer to margin x and py refer to padding y -->
+        <ul class="flex gap-5 font-bold">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    
+    <!-- So this is How Tailwind Works -->
+</body>
+</html>
+
+<!-- So after installing  npm install -D tailwindcss postcss autoprefixer -->
+ <!-- After installing goto package.json file then add this script
+    "scripts:{
+    "start":"vite"}   
+ -->
+
+ <!-- And after on tailwind.config.js file 
+
+ 
+  add "*" on content -->
+
+  <!-- And thats the basic talking on Tailwind -->
+
+  <!-- Happy coding -->
