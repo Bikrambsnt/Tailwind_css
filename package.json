@@ -2,8 +2,8 @@
 
   "scripts": {
 
-    "start": "vite"
-
+    "start": "vite",
+    "build": "vite build" 
   },
 
   "devDependencies": {
