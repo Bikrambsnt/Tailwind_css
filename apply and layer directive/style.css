@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+/* Now Instead of applying @apply here I can use layer to define it from below also */
+@tailwind utilities;
+
+
+@layer components{
+    .btn{
+    @apply py-5 px-10 bg-red-100 font-serif font-bold;
+    }
+}
+
+/* Or I can do */
+
+@layer utilities{
+    .btn{
+        @apply py-5 px-10 bg-red-100 font-serif font-bold;
+    }
+}
+
+
+/* I can apply this according to my requirment */
+/* This is how layer directive works on tailwind css */
+
+/* Easy */

@@ -1,0 +1,42 @@
+
+<!-- Apply directive can be used to craete a single class from more than a one class simply we can wrap lots of classes on a single class -->
+
+<!-- apply diective provides re-usability of a same code  instead of writing same line of css again and again -->
+
+<!-- apply directve can be created by wrapping more than one class on a new class on a input.css file after the @tailwind components and
+ before the @tailwind utilities-->
+
+ <!-- This is because when the browser read the css file it will read @tailwind component first then it will add all the taiwind css after that it will read our created class and the utility class
+  
+ if we want to add our craeted class first then we can lace it accordingly before the components or after the utilities -->
+
+ <!-- Example -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply directive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+ </head>
+ <body>
+
+    <button type="button" class= " m-20 px-10 py-8 bg-red-400 rounded-md hover:bg-yellow-400">Button</button>
+    <!-- Now if I want another button then I will just add this above class on input.css file by creating my custom then then I will add that class on another button -->
+    <button class="btn">Button 2</button>    
+ </body>
+ </html>
+
+<!-- This is how I can use @apply directive -->
+
+
+
+
+
+
+
+
+
+ 

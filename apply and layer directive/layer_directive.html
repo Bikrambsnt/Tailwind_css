@@ -1,0 +1,35 @@
+
+
+<!-- @Layer directive  is used to define the layer in which we can use apply directive  -->
+ <!-- Means instead of adding apply directive after or before @tailwind component or utility we can use layer directive to define in wich layer we want oue apply css want from any css file -->
+
+
+ <!-- Example -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Directive</title>
+    <link rel="stylesheet" href="style.css">
+
+ </head>
+ <body>
+    <button class="py-5 px-10 bg-red-100 font-serif font-bold ">Click me</button>
+
+    <button class="btn">Click me</button>
+    
+ </body>
+ </html>
+
+ <!--NOTE-->
+
+ <!-- Always try to use this apply and layer directive as minimum as possible if we use
+  this again and again then there is no meaning of using tailwind if you are creating css file and again writing css on that css file then jumping from html to tailwind again and again -->
+
+  <!-- apply and layer should be used only when any element is repeating again again for like 10 times then we can use it -->
+
+  <!--Try to keep maintainability on your code always-->
+
+  <!--Thats it about apply and layer on tailwind-->
