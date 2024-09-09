@@ -33,32 +33,44 @@
 
 <!-- By using node module / Post CSS -->
 
-<!-- Install this package from terminal first  -->
-<!--npm install -D tailwindcss postcss autoprefixer vite
+<!-- 
+Step1: Open your cmd or Terminal
+step2: Select folder where you want to setup your tailwind css
+Step3: node -v  [If Node is not available on your machine First install it to use Postcss]
+Step4: npm init -y 
+step5: npm install -D tailwindcss postcss autoprefixer            [It will install Node module]
+step6: npx tailwindcss init                                        [It will install tailwindcss.config.js file]
+step7: npx tailwindcss init -p                                     [It will Install Postcss file]
+step8: After this go to tailwindcss.config.js file then add "*" on content[]
+step9: after that Create a .css file <filename> as per you coice ex. style.css
+step10:Add this 3 line of code inide that created css file
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+step11: npm i vite   [it will install vite]
+step12: go to package.json file then add 
+      "start":"vite" in script section
+      if script is not present then create 
+      ex.
+
+      "scripts":{
+      "start": "vite"
+      }
+
+step13: create a .html file and add that css file which is created in stpep9
+
+step14:After writing your html code open terminal and run the cmd
+        npm run start
+
+        then click on the generate port id to view the site on browser.
+
+
+
+
+
+
+
 -->
-
-<!-- here vite is used to run the project locally -->
-
-<!-- After installing go to pavkage.json file and add
- 
-  "scripts": {
-    "start": "vite"
-  }
- this script -->
-
-<!-- After that install this package also -->
-
-<!-- npx tailwindcss init -->
-<!-- after installing this package goto tailwind.config.js file and add  ["*"] on component section -->
-
-<!-- after that create a input.css file and add on html file inside input.css file add this css componets
-            @tailwind base;
-            @tailwind components;
-            @tailwind utilities; 
-   -->
-
-   <!-- This is a tailwind css components which will import only that css code which is added on html file -->
-
    <!-- Example -->
 
    <!DOCTYPE html>
@@ -67,13 +79,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using postCSS</title>
-   <link rel="stylesheet" href="input.css">
+   <link rel="stylesheet" href="style.css">
    </head>
    <body>
 
     <h1 class="text-center font-mono text-red-400">Hello World</h1>
 
-    <!-- Now if we check input.css on our browser then we can see that its only adding that css which are used on html -->
+    <!-- Now if we check style.css on our browser then we can see that its only adding that css which are used on html -->
     
    </body>
    </html>
